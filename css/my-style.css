@@ -1,83 +1,104 @@
-.my-bacground-black{
-    background: #2c2c32;
+* {
+    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
 }
-.logo-vs{
-    width: 25px;
-
+.my-margin{
+    margin-top: 40px;
 }
-.collapse .navbar-nav-scroll .nav-item{
-    margin-left: 5px;
+.chu-hoa{
+    font-size: 45px;
+    margin-bottom: 0;
 }
-.my-style{
-    padding:0;
+.screenshot{
+    /* background-image: url("../img/home-screenshot-win.png");
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat; */
+    width: 100%;
+    background-repeat: no-repeat;
 }
-.banner{
-    background: #25252b;
-    padding: 0;
+.my-bacground-black {
+  background: #2c2c32;
 }
-.update-version{
-    text-decoration: none;
+.logo-vs {
+    position: absolute;
+    width: 24px;
+    z-index: 1;
+    padding-top: 2.1px;
 }
-.banner .message{
-    color:#ccc;
-    padding-left: 267px;
-    margin: 10px;
-    text-align: center;
+.my-container {
+  padding: 0;
 }
-.banner .container{
-    text-align: center;
-    padding: 0;
+.collapse .navbar-nav-scroll .nav-item {
+  margin-left: 5px;
 }
-.background-download{
-    background: #0066b8;
-    height: 50px;
-    padding: 14px;
-    cursor: pointer;
-    
+.my-style {
+  padding: 0;
 }
-.background-download:hover{
-
-    background-color: #005ba4;
+.banner {
+  background: #25252b;
+  padding: 0;
 }
-.logo-download:hover{
-    color: white;
+.update-version {
+  text-decoration: none;
 }
-.logo-download{
-    text-decoration: none;
-    color:#fff;
-    font-weight: bold;
+.banner .message {
+  color: #ccc;
+  padding-left: 250px;
+  margin: 10px;
 }
-.my-search{
-    border-radius: 0px !important;
-    border: none;
-    height: 50px;
-    background: #3d3d42;
-    width: 183px;
+.banner .container {
+  text-align: center;
+  padding: 0;
 }
-.my-search:focus{
-    background: #3d3d42 !important;
-    color: white;
-    box-shadow: none;
+.background-download {
+  background: #0066b8;
+  height: 50px;
+  padding: 14px;
+  cursor: pointer;
 }
-.text-vs{
-    margin-left: 13px;
+.background-download:hover {
+  background-color: #005ba4;
 }
-.abc{
-    background: url("../img/search.svg") left no-repeat;
-    /* width: 50px; */
-    /* height: 50px; */
+.logo-download:hover {
+  color: white;
+}
+.logo-download {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.my-search {
+  border-radius: 0px !important;
+  border: none;
+  height: 50px;
+  background: #3d3d42;
+  width: 183px;
+}
+.my-search:focus {
+  background: #3d3d42 !important;
+  color: white;
+  box-shadow: none;
+}
+.text-vs {
+  margin-left: -8px;
+    font-size: 19px;
+}
+.abc {
+  background: url("../img/search.svg") left no-repeat;
+  /* width: 50px; */
+  /* height: 50px; */
 }
 .has-search .form-control {
-    padding-left: 2.375rem;
+  padding-left: 2.375rem;
 }
 
 .has-search .form-control-feedback {
-    position: absolute;
-    z-index: 0;
-    display: block;
-    width: 3em;
-    line-height: 3.500em;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
+  position: absolute;
+  z-index: 0;
+  display: block;
+  width: 3em;
+  line-height: 3.5em;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
 }
