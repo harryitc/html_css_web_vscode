@@ -11,7 +11,7 @@
     />
     <title>bai 1</title>
   </head>
-  <body>
+  <body style="overflow: scrol">
     <header>
       <div class="navbar navbar-expand-lg my-bacground-black my-style">
         <div class="container my-container">
@@ -21,7 +21,8 @@
             <img class="logo-vs" src="img/logo.png" />
             <span style="padding-left: 35px">Visual Studio Code</span>
           </a>
-
+          <!-- code này là khi resize viewport thì sẽ có 1 Button
+            , khi nhấn vào sẽ hiển thị 1 list, giống dropitem -->
           <button
             class="navbar-toggler"
             type="button"
@@ -33,6 +34,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!--///////////////////////////-->
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
               <!-- Docs -->
@@ -88,7 +90,7 @@
               <!-- download -->
               <li class="background-download">
                 <a class="logo-download" href="#">
-                  <img src="img/download.svg" width="18px" />
+                  <img class="img-download" src="img/download.svg"/>
                   <span>Download</span>
                 </a>
               </li>
@@ -119,8 +121,7 @@
             <div class="col-md-4 border border-warning my-margin">
               <p class="chu-hoa">Code editing.<span> Redefined.</span></p>
               <div class="lead text-white-50">
-                <p>
-                  Free. Built on open source. Runs everywhere.</p>
+                <p>Free. Built on open source. Runs everywhere.</p>
               </div>
             </div>
             <!-- cot 2 -->

@@ -67,6 +67,9 @@
   color: #fff;
   font-weight: bold;
 }
+.logo-download .img-download{
+  width: 24px;
+}
 .my-search {
   border-radius: 0px !important;
   border: none;
@@ -74,10 +77,16 @@
   background: #3d3d42;
   width: 183px;
 }
+.my-search::placeholder{
+  color: rgba(255,255, 255, .8);
+  font-size: 14px;
+}
 .my-search:focus {
   background: #3d3d42 !important;
-  color: white;
-  box-shadow: none;
+  color: white !important;
+  box-shadow: none !important;
+  outline: 1px solid rgba(255,255, 255, .5);
+  outline-offset: -1px;
 }
 .text-vs {
   margin-left: -8px;
