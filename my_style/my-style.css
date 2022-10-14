@@ -4,28 +4,77 @@
 body {
   overflow-y: scroll;
 }
-.learn,.docs,.updates,.blog,.api,.extensions,.faq{
+.my-navbar-left-right .navbar-left .nav-item
+.learn,
+.docs,
+.updates,
+.blog,
+.api,
+.extensions,
+.faq {
   color: white;
   opacity: 0.6;
 }
 .my-margin {
   margin-top: 62px;
-    padding: 0;
-    margin-left: -13px;
+  padding: 0;
+  margin-left: -13px;
 }
-.lead{
+.lead {
   margin: 0;
   color: white;
   opacity: 0.7;
 }
-.lead p{
+.lead p {
   font-size: 18px;
-    padding: 0;
-    margin: 0;
-    margin-top: 6px;
-    letter-spacing: 0.2px;
-    padding-left: 7px;
-    opacity: 0.99;
+  padding: 0;
+  margin: 0;
+  margin-top: 6px;
+  letter-spacing: 0.2px;
+  padding-left: 7px;
+  opacity: 0.99;
+}
+.text-small {
+  font-size: 14px;
+}
+.button-download-area {
+  margin-top: 24px;
+  margin-left: 6px;
+}
+.button-download-area .button-to,
+.button-nho {
+  border-radius: 0;
+  background: #0066b8;
+  border: none;
+}
+.button-download-area .button-to {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  height: 65px;
+  padding-top: 9px;
+  width: 232px;
+}
+.button-download-area .button-nho {
+  border-radius: 0;
+  background: #0066b8;
+  border: none;
+  width: 43px;
+  height: 65px;
+  margin-left: -2.4px;
+  padding-top: 18px;
+}
+.button-download-area .button-to:hover,
+.button-nho:hover {
+  background-color: #005ba4;
+}
+.button-download-area .button-to .text-small {
+  display: block;
+  font-weight: 300;
+  margin-top: -1px;
+}
+.button-download-area .button-nho .img-arrow-down {
+  width: 1px;
 }
 .chu-hoa {
   font-size: 50px;
@@ -34,26 +83,76 @@ body {
   margin-top: -1px;
   margin-left: 6px;
 }
-.chu-hoa-2{
+.chu-hoa-2 {
   font-weight: 400;
   font-size: 50px;
   display: block;
   margin-top: -5px;
-  padding-left: 1px;
 }
-.my-navbar-left-right .navbar-left .nav-link:hover {
-  color: white !important;
+.my-navbar-left-right .navbar-left .nav-item a:hover {
+  color: white;
+}
+.collapse .navbar-nav-scroll .nav-item {
+  margin-left: 5px;
+  padding-top: 4px;
+  margin-right: 3px;
 }
 .navbar-right {
   margin-right: -28px;
+}
+.license-privacy{
+  color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    margin-top: 13px;
+    margin-left: 5px;
+    font-weight: 300;
+}
+.license-privacy a{
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  color: #0098ff;
+  margin-top: -1px;
+}
+.license-privacy a:hover{
+  text-decoration: underline;
+}
+.subtext {
+  background: #25252b;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  width: 277px;
+  height: 36px;
+  margin-left: 54px;
+  margin-top: 15px;
+  font-weight: 400;
+  padding-top: 7px;
+  padding-left: 1px;
+}
+
+.subtext-nav {
+  text-decoration: none;
+  font-weight: 100;
+  color: #0098ff;
+}
+.subtext a:hover {
+  text-decoration: underline;
+  color: #0098ff;
 }
 .screenshot {
   /* background-image: url("../img/home-screenshot-win.png");
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat; */
-  width: 100%;
   background-repeat: no-repeat;
+  width: 750px;
+  padding-top: 30px;
+  margin-left: 11px;
+}
+.my-margin-2 {
+  margin-bottom: 34px;
 }
 .my-bacground-black {
   background: #2c2c32;
@@ -67,11 +166,7 @@ body {
 .my-container {
   padding-left: 9px;
 }
-.collapse .navbar-nav-scroll .nav-item {
-  margin-left: 5px;
-  padding-top: 4px;
-  margin-right: 3px;
-}
+
 .my-style {
   padding: 0;
 }
@@ -81,7 +176,7 @@ body {
 }
 .update-version {
   text-decoration: none;
-  color: #0098FF;
+  color: #0098ff;
 }
 .banner .message {
   color: #ccc;
