@@ -13,7 +13,9 @@
   </head>
   <body>
     <header>
-      <div class="navbar navbar-expand-lg my-bacground-black my-style">
+      <div
+        class="navbar navbar-expand-lg my-bacground-black my-style fixed-top my-fixed-top"
+      >
         <div class="container my-container">
           <!-- div logo và chữ vscode góc trái trên màn hình  -->
 
@@ -77,9 +79,7 @@
             <!-- Actual search box -->
             <ul class="nav navbar-nav navbar-right">
               <li class="form-group has-search">
-                <span
-                  class="bi bi-search form-control-feedback text-white"
-                ></span>
+                <img class="btn icon-search" src="img/search.svg" />
                 <input
                   type="text"
                   class="form-control my-search"
@@ -134,16 +134,18 @@
                 </div>
               </div>
               <p class="subtext">
-                <a class="subtext-nav" href="#">Web</a>, 
-                <a class="subtext-nav"href="#">Insiders edition</a>, 
-                or 
-                <a class="subtext-nav"href="#">other platforms</a>
-                <div class="license-privacy">
-                  By using VS Code, you agree to its
-                  <a href="#">license and privacy statement.</a>
-                </div>
+                <a class="subtext-nav" href="#">Web</a>,
+                <a class="subtext-nav" href="#">Insiders edition</a>, or
+                <a class="subtext-nav" href="#">other platforms</a>
               </p>
+
+              <div class="license-privacy">
+                By using VS Code, you agree to its
+                <a href="#">license and privacy statement.</a>
+              </div>
+              <p></p>
             </div>
+
             <!-- cot 2 -->
             <div class="col-md-8 my-margin-2">
               <img class="screenshot" src="img/home-screenshot-win-lg.png" />

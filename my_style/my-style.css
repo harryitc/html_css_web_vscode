@@ -4,8 +4,7 @@
 body {
   overflow-y: scroll;
 }
-.my-navbar-left-right .navbar-left .nav-item
-.learn,
+.my-navbar-left-right .navbar-left .nav-item .learn,
 .docs,
 .updates,
 .blog,
@@ -91,6 +90,7 @@ body {
 }
 .my-navbar-left-right .navbar-left .nav-item a:hover {
   color: white;
+  opacity: 1;
 }
 .collapse .navbar-nav-scroll .nav-item {
   margin-left: 5px;
@@ -98,23 +98,50 @@ body {
   margin-right: 3px;
 }
 .navbar-right {
-  margin-right: -28px;
+  margin-right: -27px;
 }
-.license-privacy{
+.navbar-right .has-search .icon-search {
+  width: 42px;
+  position: absolute;
+  margin-top: 10px;
+}
+.navbar-right .has-search .my-search:focus,
+.navbar-right .has-search .my-search:active {
+  outline: 1px solid rgba(255, 255, 255, 0.5) !important;
+  outline-offset: -1px !important;
+  background: rgba(255, 255, 255, 0.18);
+}
+.navbar-right .has-search .my-search:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  outline-offset: -1px;
+  background: rgba(255, 255, 255, 0.18) !important;
+}
+.my-search {
+  border-radius: 0px !important;
+  border: none;
+  height: 50px;
+  background: #3d3d42;
+  width: 183px;
+  padding-left: 41px;
+  padding-top: 4px;
+  font-weight: 400;
+  color: white;
+}
+.license-privacy {
   color: rgba(255, 255, 255, 0.6);
-    font-size: 12px;
-    margin-top: 13px;
-    margin-left: 5px;
-    font-weight: 300;
+  font-size: 12px;
+  margin-top: 13px;
+  margin-left: 5px;
+  font-weight: 300;
 }
-.license-privacy a{
+.license-privacy a {
   display: block;
   font-size: 12px;
   text-decoration: none;
   color: #0098ff;
   margin-top: -1px;
 }
-.license-privacy a:hover{
+.license-privacy a:hover {
   text-decoration: underline;
 }
 .subtext {
@@ -166,13 +193,16 @@ body {
 .my-container {
   padding-left: 9px;
 }
-
+.my-fixed-top {
+  box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 33%);
+}
 .my-style {
   padding: 0;
 }
 .banner {
   background: #25252b;
   padding: 0;
+  margin-top: 50px;
 }
 .update-version {
   text-decoration: none;
@@ -194,6 +224,7 @@ body {
   padding: 14px;
   cursor: pointer;
   padding-right: 24px;
+  width: 135px;
 }
 .background-download:hover {
   background-color: #005ba4;
@@ -207,23 +238,21 @@ body {
   font-weight: bold;
 }
 .button-download .text-download {
-  padding-left: 3px;
   font-weight: 500;
+  margin-top: -20px;
+  display: block;
+  margin-left: 27px;
 }
 .button-download .img-download {
   width: 16px;
-  margin-top: -4px;
-}
-.my-search {
-  border-radius: 0px !important;
-  border: none;
-  height: 50px;
-  background: #3d3d42;
-  width: 183px;
+  margin-top: 3px;
+  margin-left: 1px;
+  display: block;
 }
 .my-search::placeholder {
   color: rgba(255, 255, 255, 0.8);
   font-size: 13.5px;
+  margin-left: 10px;
 }
 .my-search:focus {
   background: #3d3d42 !important;
@@ -236,11 +265,11 @@ body {
   margin-left: -8px;
   font-size: 19px;
 }
-.has-search .form-control {
-  padding-left: 2.375rem;
-}
+/* .has-search .form-control {
+  padding-left: 2.55rem;
+} */
 
-.has-search .form-control-feedback {
+/* .has-search .form-control-feedback {
   position: absolute;
   z-index: 0;
   display: block;
@@ -249,4 +278,4 @@ body {
   text-align: center;
   pointer-events: none;
   color: #aaa;
-}
+} */
