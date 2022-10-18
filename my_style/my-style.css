@@ -373,7 +373,41 @@ body {
 .hello-2:nth-child(even){
   background-color: initial;
 }
-.ava-1{
-  width: 10rem;
-  height: 10rem;
+.customize-icon-chevron{
+  font-size: 2rem;
+  color: darkgreen;
+}
+.customize-logo img{
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  /* box-shadow: 2px 2px 2px 0 rgb(0 0 0 / 20%); */
+  box-shadow: 5px 5px 20px#005ba4;
+  float: left;
+  margin-left: 10px;
+  
+}
+.text-content{
+  display: inline-block;
+  /* border: 1px solid cyan; */
+  position: relative;
+  left: 1.5rem;
+  width: 72%;
+  color: #444;
+}
+.text-content .tweet-body{
+  font-size: 17px;
+}
+.attribution{
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: black;
+}
+.carousel-control-prev{
+  margin-left: -5.2rem;
+  margin-bottom: 2.7rem;
+}
+.carousel-control-next{
+  margin-right: -6.5rem;
+  margin-bottom: 2.7rem;
 }
