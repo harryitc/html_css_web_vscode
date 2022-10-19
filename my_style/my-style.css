@@ -302,23 +302,23 @@ body {
   margin-bottom: 0.4rem; /*cách 1 dòng giữa ảnh và chữ*/
   margin-top: -0.2rem;
 }
-.pic1{
+.pic1 {
   padding-right: 1.4rem;
   padding-top: 0.7rem;
   padding-bottom: 1.2rem;
 }
-.pic2{
+.pic2 {
   padding-right: 0.4rem;
   padding-top: 0.7rem;
   padding-bottom: 1.2rem;
 }
-.pic3{
+.pic3 {
   padding-left: 0.25rem;
-    padding-top: 0.7rem;
-    margin-left: 0.1em;
-    padding-bottom: 1.2rem;
+  padding-top: 0.7rem;
+  margin-left: 0.1em;
+  padding-bottom: 1.2rem;
 }
-.pic4{
+.pic4 {
   padding-left: 1.4rem;
   padding-top: 0.7rem;
   padding-bottom: 1.2rem;
@@ -338,76 +338,263 @@ body {
 .value-prop .anh-4 {
   background-position: -9.8rem 0;
 }
- /*----------------- hover --------------*/
-.col-md-3 a:hover{
+/*----------------- hover --------------*/
+.col-md-3 a:hover {
   background-color: #e3e3e3;
   color: #000;
 }
-.pic1:hover .anh-1{
+.pic1:hover .anh-1 {
   background-position: 0.1rem -3.9rem;
   margin-top: 0.35rem;
   margin-bottom: -0.15rem;
 }
-.pic2:hover .anh-2{
+.pic2:hover .anh-2 {
   background-position: -3.2rem -3.9rem;
   margin-top: 0.35rem;
   margin-bottom: -0.15rem;
 }
-.pic3:hover .anh-3{
+.pic3:hover .anh-3 {
   background-position: -6.4rem -3.9rem;
   margin-top: 0.35rem;
   margin-bottom: -0.15rem;
 }
-.pic4:hover .anh-4{
+.pic4:hover .anh-4 {
   background-position: -9.8rem -3.9rem;
   margin-top: 0.35rem;
   margin-bottom: -0.15rem;
 }
-.hello-2{
+.hello-2 {
   padding: 6rem 0 6rem;
-  min-height: 18.75rem;
+  min-height: 21.65rem;
 }
-.hello-2:nth-child(odd){
+.hello-2:nth-child(odd) {
   background-color: #f5f5f5;
 }
-.hello-2:nth-child(even){
+.hello-2:nth-child(even) {
   background-color: initial;
 }
-.customize-icon-chevron{
+.customize-icon-chevron {
   font-size: 2rem;
   color: darkgreen;
 }
-.customize-logo img{
+.tweet-body a {
+  color: #0071bc;
+  text-decoration: none;
+}
+.tweet-body a:hover,
+a:focus {
+  color: #005893;
+  text-decoration: underline;
+}
+.customize-logo img {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
-  /* box-shadow: 2px 2px 2px 0 rgb(0 0 0 / 20%); */
-  box-shadow: 5px 5px 20px#005ba4;
+  box-shadow: 2px 2px 2px 0 rgb(0 0 0 / 20%);
   float: left;
   margin-left: 10px;
-  
 }
-.text-content{
+.text-content {
   display: inline-block;
   /* border: 1px solid cyan; */
   position: relative;
-  left: 1.5rem;
-  width: 72%;
+  top: 0.13rem;
+  left: 0.6rem;
+  width: 71%;
   color: #444;
+  line-height: 1.5rem;
 }
-.text-content .tweet-body{
+.text-content .tweet-body {
   font-size: 17px;
 }
-.attribution{
+.text-content .handle {
+  color: #6e6e6e;
+  font-size: 0.75rem;
+}
+.attribution {
   text-decoration: none;
   font-size: 0.85rem;
   color: black;
 }
-.carousel-control-prev{
+.carousel-control-prev {
   margin-left: -5.2rem;
   margin-bottom: 2.7rem;
 }
-.carousel-control-next{
+.carousel-control-next {
   margin-right: -6.5rem;
   margin-bottom: 2.7rem;
+}
+/*do text-content có positon là relative nên đặt positon cho ::after
+  thì sẽ xuất hiện trong khung của text-content*/
+
+.icon-bird-twitter .text-content::after {
+  background-image: url("../img_icon/firststart-sidebar-sprite.svg");
+  content: ""; /*có before hay after là luôn luôn phải có content rỗng*/
+  width: 1rem;
+  height: 1.5rem;
+  background-size: 4.8rem 2rem;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.2;
+  background-position: 50% 50%;
+  /* border: 1px solid cyan; */
+}
+.img-meet img {
+  position: relative;
+  top: -0.5rem;
+  right: 0.7rem;
+}
+.text-meet {
+  position: relative;
+  top: -1.1rem;
+  left: 5.97rem;
+}
+h2 {
+  font-size: 1.9rem;
+  color: #444;
+  font-weight: 100;
+  letter-spacing: -0.15px;
+}
+.text-meet p {
+  margin-top: 2.1rem;
+  line-height: 2.5rem;
+  width: 650px;
+  font-size: 18px;
+}
+.text-debug {
+  position: relative;
+  top: -1.1rem;
+  left: 5.97rem;
+}
+.img-debug img {
+  position: relative;
+  top: -0.5rem;
+  left: 0.7rem;
+}
+.text-debug p {
+  margin-top: 2.1rem;
+  line-height: 2.5rem;
+  width: 650px;
+  font-size: 18px;
+}
+
+.img-git img {
+  position: relative;
+  top: -0.5rem;
+  right: 0.7rem;
+}
+.text-git {
+  position: relative;
+  top: -1.1rem;
+  left: 5.97rem;
+}
+.text-git p {
+  margin-top: 2.1rem;
+  line-height: 2.5rem;
+  width: 650px;
+  font-size: 18px;
+}
+.img-azure img {
+  position: relative;
+  top: -0.5rem;
+  right: 0.7rem;
+}
+.text-azure {
+  position: relative;
+  top: -1.1rem;
+  left: 5.97rem;
+}
+.text-azure p {
+  margin-top: 2.1rem;
+  line-height: 2.5rem;
+  width: 650px;
+  font-size: 18px;
+}
+.text-azure p a {
+  color: #0071bc;
+  text-decoration: none;
+}
+.text-azure p a:hover,
+.text-azure p a:focus {
+  color: #005893;
+  text-decoration: underline;
+}
+.text-extension {
+  position: relative;
+  top: -1.1rem;
+  /* left: 1.97rem; */
+}
+.text-extension p {
+  margin-top: 2.1rem;
+  line-height: 2.5rem;
+  width: 650px;
+  font-size: 18px;
+}
+.text-extension p a {
+  text-decoration: none;
+  color: #0071bc;
+}
+.text-extension p a:hover,
+p a:focus {
+  color: #005893;
+  text-decoration: underline;
+}
+.img-extension a img {
+  width: 100%;
+  position: relative;
+  top: -2rem;
+  left: 0.7rem;
+  transition: 0.75s ease 0s;
+}
+.img-extension a img:hover {
+  transform: scale(1.05);
+  transition: 0.5 ease 0s;
+}
+.vs-code-for {
+  font-size: 1.7rem;
+  color: #444;
+  font-weight: 100;
+  margin: 3rem 0;
+}
+.vs-code-for .row {
+  margin-left: -3rem;
+  margin-right: -3rem;
+}
+.icon-laptrinh p img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.customize-row-vs-code-for {
+  width: 61rem;
+  margin: 0 auto;
+}
+.link-market {
+  font-size: 1.1rem;
+}
+.link-market a {
+  text-decoration: none;
+  color: #0071bc;
+}
+.link-market a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #005893;
+}
+.my-container-section-icon {
+  margin-top: -5rem;
+}
+.get-started-now button {
+  background-color: #0066b8;
+  padding: 15px 35px !important; /*Không hiểu vì sao nó lại không cho padding, vì vậy mà tôi thêm important*/
+  font-weight: 600;
+  border-radius: 2px;
+  color: white;
+  font-size: 20px;
+}
+.get-started-now button:hover {
+  background-color: #005ba4;
 }
