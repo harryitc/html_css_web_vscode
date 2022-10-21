@@ -4,6 +4,27 @@
 body {
   overflow-y: scroll;
 }
+/*web này có button đều là màu xanh đậm và hover làm đậm như nhau,
+  cho nên tôi set up cố định background cho nó và cả event hover,focus*/
+.btn {
+  background-color: #0066b8 !important;
+  border-radius: 0;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #005ba4 !important;
+}
+
+a {
+  color: #0071bc;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #005893;
+}
+
 .my-navbar-left-right .navbar-left .nav-item .learn,
 .docs,
 .updates,
@@ -101,9 +122,10 @@ body {
   margin-right: -27px;
 }
 .navbar-right .has-search .icon-search {
-  width: 42px;
+  width: 16px;
   position: absolute;
-  margin-top: 10px;
+  margin-top: 17px;
+  margin-left: 0.85rem;
 }
 /* hover -> focus -> active 1 trinh tu nhat dinh*/
 .navbar-right .has-search .my-search:hover {
@@ -588,7 +610,6 @@ a:focus {
   margin-top: -5rem;
 }
 .get-started-now button {
-  background-color: #0066b8;
   padding: 15px 35px !important; /*Không hiểu vì sao nó lại không cho padding, vì vậy mà tôi thêm important*/
   font-weight: 600;
   border-radius: 2px;
@@ -597,4 +618,184 @@ a:focus {
 }
 .get-started-now button:hover {
   background-color: #005ba4;
+}
+.customize-row-download-system {
+  margin: 0rem auto;
+  width: 61rem;
+}
+.img-logo {
+  width: 5.4rem;
+  height: 6.4rem;
+  margin: 0rem auto;
+}
+.windows {
+  /* position: abolute; */
+  margin-right: 2rem;
+}
+.button-download-windows {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.9);
+  display: block;
+  margin-top: 1rem;
+  margin-left: 0rem;
+  width: 240px;
+}
+/*lấy div "gần nhất"  */
+.button-download-windows .win-1 {
+  margin-bottom: 0.5rem;
+}
+.button-download-windows span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+.button-download-windows img {
+  width: 16px;
+  margin-top: -7px;
+  margin-right: 0.7rem;
+}
+
+.button-download-linux-1,
+.button-download-linux-2 {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 1rem;
+  display: inline-block;
+  margin-left: 0rem;
+  width: 147px;
+}
+
+/*lấy div "gần nhất"  */
+.button-download-linux-1 .linux-1,
+.button-download-linux-2 .linux-2 {
+  margin-bottom: 0.5rem;
+}
+.button-download-linux-1 span,
+.button-download-linux-2 span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+.button-download-linux-1 img,
+.button-download-linux-2 img {
+  width: 16px;
+  margin-top: -7px;
+  margin-right: 0.7rem;
+}
+
+/* button apple*/
+.button-download-apple {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.9);
+  display: block;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 240px;
+}
+
+.button-download-apple .apple-1 {
+  margin-bottom: 0.5rem;
+}
+.button-download-apple span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+.button-download-apple img {
+  width: 16px;
+  margin-top: -7px;
+  margin-right: 0.7rem;
+}
+.col-md-4 table {
+  margin-top: 1rem;
+}
+.col-md-4 table th {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.col-md-4 table td button {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+.customize-row-more-about {
+  width: 70rem;
+  margin: 0 auto;
+  margin-top: -3rem;
+}
+.col-md-6 h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 21rem;
+  margin-left: 6rem;
+}
+.col-md-6 p {
+  font-size: 1.1rem;
+}
+.end-main {
+  margin-top: 3rem;
+}
+.end-main p {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+.end-main .dautien {
+  font-weight: 600;
+}
+.footer {
+  width: 100%;
+  height: 100%;
+position: relative;
+  background: #333;
+}
+.footer-left-right ul{
+  color: white;
+  list-style-type: none;
+  padding: 2rem 0;
+}
+.footer-left .button-github {
+  background: white !important; /*nếu thắc mắc tại sao lại important, thì đó là do tôi đã setup class btn là blue*/
+  color: black;
+  padding: 0 0.3rem;
+  border: none;
+  font-weight: 400;
+}
+.footer-left ul{
+  position: absolute;
+  top: 0;
+  font-size: 0.9rem;
+}
+.footer-left li, .footer-right li{
+ display: inline;
+ padding: 0.3rem;
+}
+.footer-right .button-microsoft{
+  background: #333 !important;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  /* display: inline-block; */
+  padding: 0;
+}
+.footer-right .copyright{
+  color: white;
+  display: block;
+  font-size: 0.8rem;
+}
+.footer-right{
+  text-align: right;
+}
+.footer-right ul{
+font-size: 0.8rem;
+}
+.footer-right li a{
+  color: white;
 }
