@@ -9,6 +9,7 @@ body {
 .btn {
   background-color: #0066b8 !important;
   border-radius: 0;
+  border: none;
 }
 .btn:hover,
 .btn:focus {
@@ -21,8 +22,24 @@ a {
 }
 a:hover,
 a:focus {
-  text-decoration: underline;
+  text-decoration: underline !important;
   color: #005893;
+}
+
+.my-bacground-black {
+  background: #2c2c32;
+}
+.logo-vs {
+  position: absolute;
+  width: 24px;
+  z-index: 1;
+  padding-top: 2.1px;
+}
+.my-container {
+  padding-left: 9px;
+}
+.my-fixed-top {
+  box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 33%);
 }
 
 .my-navbar-left-right .navbar-left .nav-item .learn,
@@ -32,8 +49,15 @@ a:focus {
 .api,
 .extensions,
 .faq {
+  color: rgba(255, 255, 255, 0.6);
+}
+.navbar-left .nav-item a:hover{
   color: white;
-  opacity: 0.6;
+  text-decoration: none !important;
+}
+.navbar-left .nav-item a:focus{
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none !important;
 }
 .my-margin {
   margin-top: 62px;
@@ -70,9 +94,7 @@ a:focus {
 .button-download-area .button-to {
   font-size: 18px;
   font-weight: 500;
-  color: white;
   height: 65px;
-  padding-top: 9px;
   width: 232px;
 }
 .button-download-area .button-nho {
@@ -82,7 +104,6 @@ a:focus {
   width: 43px;
   height: 65px;
   margin-left: -2.4px;
-  padding-top: 18px;
 }
 .button-download-area .button-to:hover,
 .button-nho:hover {
@@ -164,8 +185,8 @@ a:focus {
   color: #0098ff;
   margin-top: -1px;
 }
-.license-privacy a:hover {
-  text-decoration: underline;
+.license-privacy a:hover, .license-privacy a:focus {
+  color: #0098ff;
 }
 .subtext {
   background: #25252b;
@@ -187,7 +208,7 @@ a:focus {
   font-weight: 100;
   color: #0098ff;
 }
-.subtext a:hover {
+.subtext a:hover, .subtext a:focus {
   text-decoration: underline;
   color: #0098ff;
 }
@@ -205,21 +226,7 @@ a:focus {
 .my-margin-2 {
   margin-bottom: 34px;
 }
-.my-bacground-black {
-  background: #2c2c32;
-}
-.logo-vs {
-  position: absolute;
-  width: 24px;
-  z-index: 1;
-  padding-top: 2.1px;
-}
-.my-container {
-  padding-left: 9px;
-}
-.my-fixed-top {
-  box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 33%);
-}
+
 .my-style {
   padding: 0;
 }
@@ -232,6 +239,9 @@ a:focus {
   text-decoration: none;
   color: #0098ff;
 }
+.update-version:hover, .update-version:focus{
+  color: #0098ff;
+}
 .banner .message {
   color: #ccc;
   padding-left: 259px;
@@ -242,35 +252,24 @@ a:focus {
   text-align: center;
   padding: 0;
 }
-.background-download {
-  background: #0066b8;
-  height: 50px;
-  padding: 14px;
-  cursor: pointer;
-  padding-right: 24px;
-  width: 135px;
-}
-.background-download:hover {
-  background-color: #005ba4;
-}
-.button-download:hover {
-  color: white;
-}
 .button-download {
   text-decoration: none;
-  color: #fff;
   font-weight: bold;
+  height: 50px;
+  width: 134px;
+  border: none;
 }
 .button-download .text-download {
   font-weight: 500;
   margin-top: -20px;
   display: block;
-  margin-left: 27px;
+  margin-left: 20px;
+  color: white;
 }
 .button-download .img-download {
   width: 16px;
   margin-top: 3px;
-  margin-left: 1px;
+  margin-left: 2px;
   display: block;
 }
 .my-search::placeholder {
@@ -289,20 +288,12 @@ a:focus {
   margin-left: -8px;
   font-size: 19px;
 }
-/* .has-search .form-control {
-  padding-left: 2.55rem;
-} */
-
-/* .has-search .form-control-feedback {
-  position: absolute;
-  z-index: 0;
-  display: block;
-  width: 3em;
-  line-height: 3.5em;
-  text-align: center;
-  pointer-events: none;
-  color: #aaa;
-} */
+.text-vs span{
+  padding-left: 35px;
+}
+.text-vs:hover, .text-vs:focus{
+  text-decoration: none !important;
+}
 .hello {
   height: 128px;
 }
@@ -310,9 +301,14 @@ a:focus {
   display: block;
   width: 100%;
   color: #444;
-  text-decoration: none;
   font-size: 20px;
   padding: 1rem 0;
+}
+.value-prop:hover{
+  text-decoration: none !important;
+}
+.value-prop:focus{
+  color: black;
 }
 .value-prop .load-image-prop {
   background-image: url(../img/valueprops-top-sprite.svg);
@@ -386,7 +382,8 @@ a:focus {
   margin-bottom: -0.15rem;
 }
 .hello-2 {
-  padding: 6rem 0 6rem;
+  width: 100%;
+  padding: 6rem 0 4rem;
   min-height: 21.65rem;
 }
 .hello-2:nth-child(odd) {
@@ -613,7 +610,6 @@ a:focus {
   padding: 15px 35px !important; /*Không hiểu vì sao nó lại không cho padding, vì vậy mà tôi thêm important*/
   font-weight: 600;
   border-radius: 2px;
-  color: white;
   font-size: 20px;
 }
 .get-started-now button:hover {
@@ -648,7 +644,6 @@ a:focus {
 .button-download-windows span {
   font-size: 1.1rem;
   font-weight: 600;
-  color: white;
 }
 .button-download-windows img {
   width: 16px;
@@ -702,7 +697,6 @@ a:focus {
 .button-download-apple span {
   font-size: 1.1rem;
   font-weight: 600;
-  color: white;
 }
 .button-download-apple img {
   width: 16px;
@@ -749,53 +743,98 @@ a:focus {
 .end-main .dautien {
   font-weight: 600;
 }
-.footer {
+/*Chỉnh background footer và position relative để có thể dùng ul absolute*/
+.customize-footer {
   width: 100%;
-  height: 100%;
-position: relative;
   background: #333;
+  height: 95px;
 }
-.footer-left-right ul{
-  color: white;
+.customize-footer .container {
+  position: relative;
+  /* border: 1px solid red; */
+  height: 95px;
+}
+/* cân bằng khoảng cách trên dưới background footer*/
+.footer-left-right ul {
   list-style-type: none;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
-.footer-left .button-github {
-  background: white !important; /*nếu thắc mắc tại sao lại important, thì đó là do tôi đã setup class btn là blue*/
-  color: black;
-  padding: 0 0.3rem;
-  border: none;
-  font-weight: 400;
-}
-.footer-left ul{
+
+.footer-left,
+.footer-right {
   position: absolute;
+}
+.footer-left {
+  top: 50%;
+  left: 0;
+  /* border: 1px solid yellow; */
+}
+.footer-right {
   top: 0;
+  right: 0;
+  /* border: 1px solid darkorchid; */
+}
+
+.footer-left .button-github,
+.footer-left .button-github-number {
+  background-color: #eee !important; /*nếu thắc mắc tại sao lại important, thì đó là do tôi đã setup class btn là blue*/
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+}
+.footer-left .button-github-number::before {
+  top: 50%;
+  left: -3px;
+  margin-top: -4px;
+  border-width: 4px 4px 4px 0;
+  border-right-color: #fafafa;
+}
+.footer-left .button-github:hover,
+.footer-left .button-github.btn:focus,
+.footer-left .button-github-number:hover,
+.footer-left .button-github-number:focus {
+  background-color: #ddd !important;
+  color: black;
+}
+/*cố định list bên trái để cố thể dời list dưới qua phải*/
+.footer-left ul li {
   font-size: 0.9rem;
 }
-.footer-left li, .footer-right li{
- display: inline;
- padding: 0.3rem;
+/*Tăng khoảng cách giữa các ô li*/
+.footer-left li,
+.footer-right li {
+  color: white;
+  display: inline-block;
+  padding: 0.5rem;
 }
-.footer-right .button-microsoft{
+.footer-left li a {
+  color: white;
+}
+.footer-right ul {
+  position: relative;
+  margin: 0; /* để cho phần dưới hết bị thừa 1 đoạn */
+  top: -1.5rem;
+}
+.footer-right ul li {
+  font-size: 0.78rem;
+}
+.footer-right li a {
+  color: white;
+}
+.footer-right .end-footer-right {
+  position: relative;
+  top: 1.3rem;
+}
+.footer-right .button-microsoft {
   background: #333 !important;
   border: none;
-  color: white;
+  padding: 0;
   font-size: 1.1rem;
   font-weight: 500;
-  /* display: inline-block; */
-  padding: 0;
 }
-.footer-right .copyright{
-  color: white;
+.footer-right .copyright {
   display: block;
-  font-size: 0.8rem;
-}
-.footer-right{
-  text-align: right;
-}
-.footer-right ul{
-font-size: 0.8rem;
-}
-.footer-right li a{
-  color: white;
+  font-size: 0.7rem;
 }
