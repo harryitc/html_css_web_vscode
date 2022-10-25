@@ -4,42 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="my_style/my-style.css" />
+    <link rel="stylesheet" href="css-index2/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <style>
-      .row{
-        width: 100%;
-        height: 100px;
-      }
-      .jk1{
-        width: 100px;
-        height: 50px;
-        border: 5px solid cyan;
-        top: 0;
-        left: 0;
-      }
-      .jk2{
-        width: 100px;
-        height: 50px;
-        border: 5px solid yellow;
-        top: 0;
-        right: 0;
-      }
-    </style>
-    <title>test</title>
+    <title>Message</title>
   </head>
   <body>
-    <footer class="bg-primary">
-      <div class="container position-relative border border-warning">
-        <div class="row">
-          <div class="jk1 position-absolute"></div>
-          <div class="jk2 position-absolute"></div>
+    <div>
+      <div class="toast toast--success">
+        <div class="icon-status">
+          <i class="bi bi-check-circle"></i>
+        </div>
+        <div class="notification">
+          <h2 class="title">Success</h2>
+          <div class="message">You can access all the files in this folder</div>
+        </div>
+        <div class="icon-close">
+          <i class="bi bi-x-lg"></i>
         </div>
       </div>
-    </footer>
+      <div class="toast toast--info">
+        <div class="icon-status">
+          <i class="bi bi-info-circle"></i>
+        </div>
+        <div class="notification">
+          <h2 class="title">Info</h2>
+          <div class="message">
+            Anyone on the internet with this link can view.
+          </div>
+        </div>
+        <div class="icon-close">
+          <i class="bi bi-x-lg"></i>
+        </div>
+      </div>
+      <div class="toast toast--warning">
+        <div class="icon-status">
+          <i class="bi bi-exclamation-circle"></i>
+        </div>
+        <div class="notification">
+          <h2 class="title">Warning</h2>
+          <div class="message">
+            Viewers of this file can see comments and suggestions.
+          </div>
+        </div>
+        <div class="icon-close">
+          <i class="bi bi-x-lg"></i>
+        </div>
+      </div>
+      <div class="toast toast--error">
+        <div class="icon-status">
+          <i class="bi bi-x-circle"></i>
+        </div>
+        <div class="notification">
+          <h2 class="title">Error</h2>
+          <div class="message">
+            Sorry, but you're not authorized to look at this page.
+          </div>
+        </div>
+        <div class="icon-close">
+          <i class="bi bi-x-lg"></i>
+        </div>
+      </div>
+    </div>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

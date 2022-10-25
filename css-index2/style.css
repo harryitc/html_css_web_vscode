@@ -1,0 +1,81 @@
+:root {
+  --color_success: #188038;
+  --color_info: #4285f4;
+  --color_warning: #ea8600;
+  --color_error: #d93025;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5;
+  }
+  
+  body > div {
+    margin: auto;
+  }
+/* .bg {
+  position: relative;
+  top: 70px;
+  left: 120px;
+  width: 100%;
+  background-color: #f5f5f5;
+} */
+.toast {
+  display: flex !important;
+  align-items: center;
+  min-width: 450px;
+  padding: 20px 0;
+}
+@media screen and (max-width:600px) {
+    .toast{
+        background-color: cyan;
+    }
+}
+/*căn lên xuống*/
+.toast + .toast{
+    margin-top:0.5rem;
+}
+.toast--success {
+  border-left: 4px solid var(--color_success);
+}
+.toast--info {
+  border-left: 4px solid var(--color_info);
+}
+.toast--warning {
+  border-left: 4px solid var(--color_warning);
+}
+.toast--error {
+  border-left: 4px solid var(--color_error);
+}
+
+.icon-status, .icon-close{
+    padding: 0 16px;
+}
+
+.toast--success .icon-status {
+  color: var(--color_success);
+}
+.toast--info .icon-status {
+  color: var(--color_info);
+}
+.toast--warning .icon-status {
+  color: var(--color_warning);
+}
+.toast--error .icon-status {
+  color: var(--color_error);
+}
+.toast h2{
+    margin:0;
+    font-size: 1.5rem;
+}
+.toast .notification{
+    flex-grow: 1;
+
+}
