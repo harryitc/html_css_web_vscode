@@ -615,6 +615,7 @@ a:focus {
 .get-started-now button:hover {
   background-color: #005ba4;
 }
+                  /*SYSTEM DOWNLOAD*/
 .customize-row-download-system {
   margin: 0rem auto;
   width: 61rem;
