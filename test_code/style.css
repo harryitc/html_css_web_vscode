@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+.btn {
+  background-color: #0066b8 !important;
+  border-radius: 0;
+  border: none;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #005ba4 !important;
+}
+
+a {
+  color: #0071bc;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline !important;
+  color: #005893;
+}
+
+.row {
+  justify-content: center;
+}
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-logo {
+  /* width: 5.4rem;
+  height: 6.4rem; */
+  width: 100px;
+  height: 100px;
+}
+.cot-1-3 {
+  width: 310px;
+  padding: 0;
+}
+.cot-2 {
+  width: 336px;
+  padding: 0;
+}
+.button-download-windows {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.9) !important;
+  display: block;
+  width: 240px;
+  padding: 10px 0;
+  margin: 20px 0 5px;
+}
+.button-download-windows div:nth-child(1)
+{
+  display: flex;
+    width: 144px;
+    justify-content: space-evenly;
+    margin-left: 48px;
+}
+.button-download-windows span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.icon-download img {
+  width: 18px;
+}
+
+.button-download-linux-1 {
+  margin-right: 2.5px !important;
+}
+.button-download-linux-2 {
+  margin-left: 2.5px !important;
+}
+
+.button-download-linux-1,
+.button-download-linux-2 {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.9) !important;
+  width: 147px;
+  padding: 10px 0;
+  margin: 20px 0 5px;
+}
+.button-download-linux-1 div:nth-child(1){
+  display: flex;
+    width: 96px;
+    justify-content: space-evenly;
+    margin-left: 24px;
+}
+.button-download-linux-2 div:nth-child(1){
+  display: flex;
+    width: 96px;
+    justify-content: space-evenly;
+    margin-left: 24px;
+}
+.button-download-linux-1 span,
+.button-download-linux-2 span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* button apple*/
+.button-download-apple {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.9) !important;
+  display: block;
+  width: 240px;
+  padding: 10px 0;
+  margin: 20px 0 5px;
+}
+.button-download-apple div:nth-child(1){
+  display: flex;
+    width: 112px;
+    justify-content: space-evenly;
+    margin-left: 64px;
+}
+.button-download-apple span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+.col-md-4 table th {
+  font-size: 16px;
+  font-weight: 600;
+}
+.col-md-4 table td button {
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 2px;
+  border-radius: 2px;
+  margin: 0 1px;
+}
