@@ -17,15 +17,6 @@
   html {
     font-size: 14px;
   }
-  .customize-img-background-guid img{
-    width: 100% !important;
-  } 
-  .message-background-guid.odd{
-    padding-left: 5.5rem;
-  }
-  .message-background-guid.even{
-    padding-right: 5.5rem;
-  }
 }
 @media screen and (min-width: 992px) {
   html {
@@ -36,12 +27,10 @@
   html {
     font-size: 16px;
   }
-  .customize-img-background-guid img{
-    width: 22.5rem !important;
-  }
 }
-
-
+.hello-2{
+  background-color: #ccc;
+}
 .btn {
   background-color: #0066b8 !important;
   border-radius: 0;
@@ -61,63 +50,59 @@ a:focus {
   text-decoration: underline !important;
   color: #005893;
 }
-.hello-2{
-  padding: 5rem 0 5rem;
-}
-.hello-2:nth-child(even){
-  background-color: #eee;
-}
-.hello-2:nth-child(odd){
-  background-color: #ddd;
-}
-.customize-img-background-guid img {
-  /* width: 22.5rem; */
-  /* width: 100%; */
-  /* display: block; */
-  width: 60%;
-  /* margin: 0 auto; */
-}
-.message-background-guid{
-  padding-left: 0.5rem;
-}
-.message-background-guid h2 {
-  font-size: 1.6rem;
+.value-prop {
+  display: block;
   color: #444;
-  font-weight: 100;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 1rem 0;
 }
-.message-background-guid p {
-  margin-top: 2.2rem;
-  line-height: 2.8rem;
-  /* width: 35rem; */
-  font-size: 1.15rem;
+.value-prop:hover{
+  text-decoration: none !important;
+  background-color: #e3e3e3;
+  color: #000;
 }
-/* ////////////////////////////// */
-.message-background-guid p a {
-  color: #0071bc;
-  text-decoration: none;
+.value-prop:focus{
+  color: black;
 }
-.message-background-guid p a:hover,
-.message-background-guid p a:focus {
-  color: #005893;
-  text-decoration: underline;
+.value-prop .load-image-prop {
+  background-image: url(../img/valueprops-top-sprite.svg);
+  background-repeat: no-repeat;
+  background-size: 13rem 8rem;
+  width: 3.2rem;
+  height: 4rem;
+  margin: 0 auto;
+  position: relative;
+  top: -0.5rem;
 }
-.customize-img-background-guid p a {
-  text-decoration: none;
-  color: #0071bc;
+
+/* Phải căn chỉnh vị trí các ảnh đã tách cho giống với web vscode vì code không được như nó*/
+.value-prop.pic1 .anh-1 {
+  background-position: 0 0;
 }
-.customize-img-background-guid p a:hover,
-p a:focus {
-  color: #005893;
-  text-decoration: underline;
+.value-prop.pic2 .anh-2 {
+  background-position: -3.3rem 0;
 }
-.img-extension a img {
-  width: 100%;
-  /* position: relative;
-  top: -2rem;
-  left: 0.7rem; */
-  transition: 0.75s ease 0s;
+.value-prop.pic3 .anh-3 {
+  background-position: -6.5rem 0;
 }
-.img-extension a img:hover {
-  transform: scale(1.05);
-  transition: 0.5 ease 0s;
+.value-prop.pic4 .anh-4 {
+  background-position: -9.8rem 0;
+}
+/*----------------- hover --------------*/
+.value-prop:hover .load-image-prop{
+    position: relative;
+    top: 0.05rem;
+}
+.value-prop.pic1:hover .anh-1 {
+   background-position: 0rem -3.9rem;
+}
+.value-prop.pic2:hover .anh-2 {
+  background-position: -3.3rem -3.9rem;
+}
+.value-prop.pic3:hover .anh-3 {
+  background-position: -6.5rem -3.9rem;
+}
+.value-prop.pic4:hover .anh-4 {
+  background-position: -9.8rem -3.9rem;
 }
