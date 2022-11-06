@@ -4,17 +4,17 @@
 
 @media screen and (max-width: 575px) {
   html {
-    font-size: 13px;
+    font-size: 13.5px;
   }
 }
 @media screen and (min-width: 576px) {
   html {
-    font-size: 13.5px;
+    font-size: 14.5px;
   }
 }
 @media screen and (min-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
   .message-background-guid.odd {
     padding-left: 5rem;
@@ -25,7 +25,7 @@
 }
 @media screen and (min-width: 992px) {
   html {
-    font-size: 15px;
+    font-size: 15.5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -39,6 +39,15 @@
   }
   .customize-img-background-guid img {
     width: 60% !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .repons-row {
+    width: 90%;
+    margin: 1rem 0;
+  }
+  .text-content {
+    width: 88% !important;
   }
 }
 
@@ -77,10 +86,6 @@ a:focus {
   text-decoration: underline !important;
   color: #005893;
 }
-
-.my-bacground-black {
-  background: #2c2c32;
-}
 .logo-vs {
   position: absolute;
   width: 24px;
@@ -103,84 +108,13 @@ a:focus {
 .faq {
   color: rgba(255, 255, 255, 0.6);
 }
-.navbar-left .nav-item a:hover{
+.navbar-left .nav-item a:hover {
   color: white;
   text-decoration: none !important;
 }
-.navbar-left .nav-item a:focus{
+.navbar-left .nav-item a:focus {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none !important;
-}
-.my-margin {
-  margin-top: 62px;
-  padding: 0;
-  margin-left: -13px;
-}
-.lead {
-  margin: 0;
-  color: white;
-  opacity: 0.7;
-}
-.lead p {
-  font-size: 18px;
-  padding: 0;
-  margin: 0;
-  margin-top: 6px;
-  letter-spacing: 0.2px;
-  padding-left: 7px;
-  opacity: 0.99;
-}
-.text-small {
-  font-size: 14px;
-}
-.button-download-area {
-  margin-top: 24px;
-  margin-left: 6px;
-}
-.button-download-area .button-to,
-.button-nho {
-  border-radius: 0;
-  background: #0066b8;
-  border: none;
-}
-.button-download-area .button-to {
-  font-size: 18px;
-  font-weight: 500;
-  height: 65px;
-  width: 232px;
-}
-.button-download-area .button-nho {
-  border-radius: 0;
-  background: #0066b8;
-  border: none;
-  width: 43px;
-  height: 65px;
-  margin-left: -2.4px;
-}
-.button-download-area .button-to:hover,
-.button-nho:hover {
-  background-color: #005ba4;
-}
-.button-download-area .button-to .text-small {
-  display: block;
-  font-weight: 300;
-  margin-top: -1px;
-}
-.button-download-area .button-nho .img-arrow-down {
-  width: 1px;
-}
-.chu-hoa {
-  font-size: 50px;
-  margin: 0;
-  font-weight: 300;
-  margin-top: -1px;
-  margin-left: 6px;
-}
-.chu-hoa-2 {
-  font-weight: 400;
-  font-size: 50px;
-  display: block;
-  margin-top: -5px;
 }
 .my-navbar-left-right .navbar-left .nav-item a:hover {
   color: white;
@@ -223,61 +157,6 @@ a:focus {
   font-weight: 400;
   color: white;
 }
-.license-privacy {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 12px;
-  margin-top: 13px;
-  margin-left: 5px;
-  font-weight: 300;
-}
-.license-privacy a {
-  display: block;
-  font-size: 12px;
-  text-decoration: none;
-  color: #0098ff;
-  margin-top: -1px;
-}
-.license-privacy a:hover, .license-privacy a:focus {
-  color: #0098ff;
-}
-.subtext {
-  background: #25252b;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
-  margin: 0;
-  width: 277px;
-  height: 36px;
-  margin-left: 54px;
-  margin-top: 15px;
-  font-weight: 400;
-  padding-top: 7px;
-  padding-left: 1px;
-}
-
-.subtext-nav {
-  text-decoration: none;
-  font-weight: 100;
-  color: #0098ff;
-}
-.subtext a:hover, .subtext a:focus {
-  text-decoration: underline;
-  color: #0098ff;
-}
-.screenshot {
-  /* background-image: url("../img/home-screenshot-win.png");
-    width: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat; */
-  background-repeat: no-repeat;
-  width: 750px;
-  padding-top: 30px;
-  margin-left: 11px;
-  margin-bottom: -4px;
-}
-.my-margin-2 {
-  margin-bottom: 34px;
-}
 
 .my-style {
   padding: 0;
@@ -291,7 +170,8 @@ a:focus {
   text-decoration: none;
   color: #0098ff;
 }
-.update-version:hover, .update-version:focus{
+.update-version:hover,
+.update-version:focus {
   color: #0098ff;
 }
 .banner .message {
@@ -340,14 +220,106 @@ a:focus {
   margin-left: -8px;
   font-size: 19px;
 }
-.text-vs span{
+.text-vs span {
   padding-left: 35px;
 }
-.text-vs:hover, .text-vs:focus{
+.text-vs:hover,
+.text-vs:focus {
   text-decoration: none !important;
 }
 
- /* ======== code phần 4 icon ======= */
+ /* ===========code phần ảnh nền vscode */
+ .my-bacground-black {
+  background-color: #2c2c32;
+}
+.chu-hoa {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 300;
+}
+.chu-hoa-2 {
+  font-weight: 400;
+  display: block;
+}
+
+.lead {
+  color: white;
+  opacity: 0.7;
+}
+.lead p {
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  opacity: 0.99;
+}
+.button-download-area .button-to,
+.button-nho {
+  border-radius: 0;
+  background: #0066b8;
+  border: none;
+}
+.button-download-area .button-to {
+  font-size: 1rem;
+  font-weight: 500;
+  height: 4rem;
+  width: 14.5rem;
+}
+.button-download-area .button-nho {
+  border-radius: 0;
+  background: #0066b8;
+  border: none;
+  width: 43px;
+  height: 4rem;
+}
+.button-download-area .button-to:hover,
+.button-nho:hover {
+  background-color: #005ba4;
+}
+.button-download-area .button-to .text-small {
+  display: block;
+  font-weight: 300;
+}
+.text-small {
+  font-size: 14px;
+}
+.subtext {
+  background: #25252b;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.subtext-nav {
+  font-weight: 100;
+  color: #0098ff;
+}
+.subtext a:hover,
+.subtext a:focus {
+  text-decoration: underline;
+  color: #0098ff;
+}
+.license-privacy {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  font-weight: 300;
+}
+.license-privacy a {
+  color: #0098ff;
+}
+.license-privacy a:hover,
+.license-privacy a:focus {
+  color: #0098ff;
+}
+.screenshot {
+  background-repeat: no-repeat;
+  width: 100%;
+}
+ /* ============== */
+
+/* ======== code phần 4 icon ======= */
 
 .value-prop {
   display: block;
@@ -356,12 +328,12 @@ a:focus {
   font-size: 1.2rem;
   padding: 1rem 0;
 }
-.value-prop:hover{
+.value-prop:hover {
   text-decoration: none !important;
   background-color: #e3e3e3;
   color: #000;
 }
-.value-prop:focus{
+.value-prop:focus {
   color: black;
 }
 .value-prop .load-image-prop {
@@ -389,12 +361,12 @@ a:focus {
   background-position: -9.8rem 0;
 }
 /*----------------- hover --------------*/
-.value-prop:hover .load-image-prop{
-    position: relative;
-    top: 0.05rem;
+.value-prop:hover .load-image-prop {
+  position: relative;
+  top: 0.05rem;
 }
 .value-prop.pic1:hover .anh-1 {
-   background-position: 0rem -3.9rem;
+  background-position: 0rem -3.9rem;
 }
 .value-prop.pic2:hover .anh-2 {
   background-position: -3.3rem -3.9rem;
@@ -407,6 +379,8 @@ a:focus {
 }
 
 /* ======== ========== */
+
+/* ========code phần slide====== */
 
 .customize-icon-chevron {
   font-size: 2rem;
@@ -422,48 +396,41 @@ a:focus {
   text-decoration: underline;
 }
 .customize-logo img {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4.2rem;
+  position: absolute;
   border-radius: 50%;
   box-shadow: 2px 2px 2px 0 rgb(0 0 0 / 20%);
-  float: left;
-  margin-left: 10px;
 }
 .text-content {
-  display: inline-block;
-  /* border: 1px solid cyan; */
   position: relative;
-  top: 0.13rem;
-  left: 0.6rem;
-  width: 71%;
+  width: 72%;
   color: #444;
   line-height: 1.5rem;
+  margin-left: 4.8rem;
 }
 .text-content .tweet-body {
-  font-size: 17px;
+  font-size: 1.1rem;
 }
 .text-content .handle {
   color: #6e6e6e;
   font-size: 0.75rem;
 }
 .attribution {
-  text-decoration: none;
   font-size: 0.85rem;
   color: black;
 }
-.carousel-control-prev {
-  margin-left: -5.2rem;
-  margin-bottom: 2.7rem;
+.attribution:hover {
+  text-decoration: none !important;
 }
+.carousel-control-prev,
 .carousel-control-next {
-  margin-right: -6.5rem;
-  margin-bottom: 2.7rem;
+  width: auto;
 }
 /*do text-content có positon là relative nên đặt positon cho ::after
   thì sẽ xuất hiện trong khung của text-content*/
 
 .icon-bird-twitter .text-content::after {
-  background-image: url("../img_icon/firststart-sidebar-sprite.svg");
+  background-image: url("../img_logo/firststart-sidebar-sprite.svg");
   content: ""; /*có before hay after là luôn luôn phải có content rỗng*/
   width: 1rem;
   height: 1.5rem;
@@ -474,9 +441,9 @@ a:focus {
   top: 0;
   opacity: 0.2;
   background-position: 50% 50%;
-  /* border: 1px solid cyan; */
 }
- /* ----------- code phan guid --------- */
+
+/* ----------- code phan guid --------- */
 .customize-img-background-guid img {
   width: 100%;
 }
@@ -515,15 +482,16 @@ p a:focus {
   transform: scale(1.05);
   transition: 0.5 ease 0s;
 }
+/* ==================================== */
 
-            /* -------- CODE Phần icon lập trình -------- */
+/* -------- CODE Phần icon lập trình -------- */
 .vs-code-for {
   font-size: 1.8rem;
   color: #444;
   font-weight: 100;
   margin: 2rem 0;
 }
-.customize-row-vs-code-for{
+.customize-row-vs-code-for {
   width: 984px;
   margin: 0 auto;
 }
@@ -551,14 +519,14 @@ a:focus {
 .get-started-now button:hover {
   background-color: #005ba4;
 }
-.icon-laptrinh p{
+.icon-laptrinh p {
   font-size: 1.125rem;
 }
-.icon-laptrinh img{
+.icon-laptrinh img {
   width: 30px;
   height: 30px;
 }
-                    /* ------------code phần Download system -------- */
+/* ------------code phần Download system -------- */
 .row.my-customize-row {
   justify-content: center;
 }
@@ -590,12 +558,11 @@ a:focus {
   padding: 10px 0;
   margin: 20px 0 5px;
 }
-.button-download-windows div:nth-child(1)
-{
+.button-download-windows div:nth-child(1) {
   display: flex;
-    width: 144px;
-    justify-content: space-evenly;
-    margin-left: 48px;
+  width: 144px;
+  justify-content: space-evenly;
+  margin-left: 48px;
 }
 .button-download-windows span {
   font-size: 1.1rem;
@@ -623,17 +590,17 @@ a:focus {
   padding: 10px 0;
   margin: 20px 0 5px;
 }
-.button-download-linux-1 div:nth-child(1){
+.button-download-linux-1 div:nth-child(1) {
   display: flex;
-    width: 96px;
-    justify-content: space-evenly;
-    margin-left: 24px;
+  width: 96px;
+  justify-content: space-evenly;
+  margin-left: 24px;
 }
-.button-download-linux-2 div:nth-child(1){
+.button-download-linux-2 div:nth-child(1) {
   display: flex;
-    width: 96px;
-    justify-content: space-evenly;
-    margin-left: 24px;
+  width: 96px;
+  justify-content: space-evenly;
+  margin-left: 24px;
 }
 .button-download-linux-1 span,
 .button-download-linux-2 span {
@@ -652,11 +619,11 @@ a:focus {
   padding: 10px 0;
   margin: 20px 0 5px;
 }
-.button-download-apple div:nth-child(1){
+.button-download-apple div:nth-child(1) {
   display: flex;
-    width: 112px;
-    justify-content: space-evenly;
-    margin-left: 64px;
+  width: 112px;
+  justify-content: space-evenly;
+  margin-left: 64px;
 }
 .button-download-apple span {
   font-size: 1.1rem;
