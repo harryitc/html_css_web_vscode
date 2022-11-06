@@ -5,22 +5,22 @@
 }
 @media screen and (max-width: 575px) {
   html {
-    font-size: 13px;
+    font-size: 13.5px;
   }
 }
 @media screen and (min-width: 576px) {
   html {
-    font-size: 13.5px;
+    font-size: 14.5px;
   }
 }
 @media screen and (min-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 992px) {
   html {
-    font-size: 15px;
+    font-size: 15.5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -28,8 +28,11 @@
     font-size: 16px;
   }
 }
-.hello-2{
-  background-color: #ccc;
+@media screen and (max-width: 992px) {
+}
+.hello-2 {
+  background-color: #eee;
+  margin-top: 5rem;
 }
 .btn {
   background-color: #0066b8 !important;
@@ -50,59 +53,91 @@ a:focus {
   text-decoration: underline !important;
   color: #005893;
 }
-.value-prop {
-  display: block;
-  color: #444;
+.my-bacground-black {
+  background: #2c2c32;
+}
+.chu-hoa {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 300;
+}
+.chu-hoa-2 {
   font-weight: 400;
-  font-size: 1.2rem;
-  padding: 1rem 0;
-}
-.value-prop:hover{
-  text-decoration: none !important;
-  background-color: #e3e3e3;
-  color: #000;
-}
-.value-prop:focus{
-  color: black;
-}
-.value-prop .load-image-prop {
-  background-image: url(../img/valueprops-top-sprite.svg);
-  background-repeat: no-repeat;
-  background-size: 13rem 8rem;
-  width: 3.2rem;
-  height: 4rem;
-  margin: 0 auto;
-  position: relative;
-  top: -0.5rem;
+  display: block;
 }
 
-/* Phải căn chỉnh vị trí các ảnh đã tách cho giống với web vscode vì code không được như nó*/
-.value-prop.pic1 .anh-1 {
-  background-position: 0 0;
+.lead {
+  color: white;
+  opacity: 0.7;
 }
-.value-prop.pic2 .anh-2 {
-  background-position: -3.3rem 0;
+.lead p {
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  opacity: 0.99;
 }
-.value-prop.pic3 .anh-3 {
-  background-position: -6.5rem 0;
+.button-download-area .button-to,
+.button-nho {
+  border-radius: 0;
+  background: #0066b8;
+  border: none;
 }
-.value-prop.pic4 .anh-4 {
-  background-position: -9.8rem 0;
+.button-download-area .button-to {
+  font-size: 1rem;
+  font-weight: 500;
+  height: 4rem;
+  width: 14.5rem;
 }
-/*----------------- hover --------------*/
-.value-prop:hover .load-image-prop{
-    position: relative;
-    top: 0.05rem;
+.button-download-area .button-nho {
+  border-radius: 0;
+  background: #0066b8;
+  border: none;
+  width: 43px;
+  height: 4rem;
 }
-.value-prop.pic1:hover .anh-1 {
-   background-position: 0rem -3.9rem;
+.button-download-area .button-to:hover,
+.button-nho:hover {
+  background-color: #005ba4;
 }
-.value-prop.pic2:hover .anh-2 {
-  background-position: -3.3rem -3.9rem;
+.button-download-area .button-to .text-small {
+  display: block;
+  font-weight: 300;
 }
-.value-prop.pic3:hover .anh-3 {
-  background-position: -6.5rem -3.9rem;
+.text-small {
+  font-size: 14px;
 }
-.value-prop.pic4:hover .anh-4 {
-  background-position: -9.8rem -3.9rem;
+.subtext {
+  background: #25252b;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.subtext-nav {
+  font-weight: 100;
+  color: #0098ff;
+}
+.subtext a:hover,
+.subtext a:focus {
+  text-decoration: underline;
+  color: #0098ff;
+}
+.license-privacy {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  font-weight: 300;
+}
+.license-privacy a {
+  color: #0098ff;
+}
+.license-privacy a:hover,
+.license-privacy a:focus {
+  color: #0098ff;
+}
+.screenshot {
+  background-repeat: no-repeat;
+  width: 100%;
 }
